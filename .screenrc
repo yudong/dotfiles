@@ -1,0 +1,15 @@
+escape ^Zz
+hardstatus alwayslastline
+defscrollback 5`000
+
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+
+screen -t "bash" 0
+screen -t "vim" 1
+screen -t "rake" 2
+screen -t "log" 3
+screen -t "r-console" 4
+screen -t "psql" 5
+screen -t "bash" 6
+
