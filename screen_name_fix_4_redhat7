@@ -1,0 +1,9 @@
+if [ -e /etc/sysconfig/bash-prompt-screen ]; then
+    PROMPT_COMMAND=/etc/sysconfig/bash-prompt-screen
+else
+## RHEL 7
+    PROMPT_COMMAND='printf "\033k%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+
+## RHEL 6
+    PROMPT_COMMAND='printf "\033]0;%s@%s:%s\033\\" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+fi
