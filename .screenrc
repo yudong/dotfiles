@@ -1,6 +1,6 @@
 escape ^Zz
 hardstatus alwayslastline
-defscrollback 5`000
+defscrollback 5000
 
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
 
