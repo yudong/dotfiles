@@ -1,3 +1,5 @@
+#This is /etc/bashrc
+
 if [ -e /etc/sysconfig/bash-prompt-screen ]; then
     PROMPT_COMMAND=/etc/sysconfig/bash-prompt-screen
 else
